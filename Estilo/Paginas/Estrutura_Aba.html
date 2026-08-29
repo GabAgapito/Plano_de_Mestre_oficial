@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<style>
+  /* ESTRUTURA INTERNA COMPARTILHADA POR TODAS AS ABAS */
+  .container-geral {
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    height: 85%;
+    weight: 100%;
+  }
+
+  .coluna-esquerda {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    weight: 93%;
+  }
+
+  .coluna-direita {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    weight: 7%;
+  }
+
+  .TituloPagina {
+    font-size: 40px;
+    color: #4D3DFE;
+    font-weight: 900;
+    margin-bottom: 15px;
+  }
+
+    /* Configurações do Botão */
+.botaoAtualizar {
+  background-color: #2ECC71; /* Exemplo de cor verde */
+  color: white;
+  border: none;
+  padding: 12px;             /* Espaçamento interno para deixar o botão quadrado */
+  border-radius: 8px;        /* Bordas levemente arredondadas */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.botaoAtualizar:hover {
+  background-color: #0b7dda; /* Efeito de cor mais escura ao passar o mouse */
+}
+
+/* AQUI aumenta o tamanho do Ícone */
+.botaoAtualizar i {
+  font-size: 1.25rem;  /* Aumenta o ícone. Se quiser ainda maior, mude para 1.8rem ou 2rem */
+  margin-right: 0;    /* Zera a margem antiga, já que não tem mais texto do lado */
+}
+  
+</style>
+</html>

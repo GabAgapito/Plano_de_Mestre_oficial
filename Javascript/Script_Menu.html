@@ -1,0 +1,62 @@
+<script>
+// ==========================================
+// CÓDIGOS DO MENU (NAVEGAÇÃO E RENDERS)
+// ==========================================
+
+function abrir_Home() {
+  document.getElementById("home").style.display = "block"; // Home pode continuar block
+  document.getElementById("areaEmpresa").style.display = "none";
+  document.getElementById("pessoasParticipantes").style.display = "none";
+  document.getElementById("ambienteInterno").style.display = "none";
+  
+  // Controle de classe ativa com trava de segurança original
+  const botaoAtivo = document.querySelector(".menuBotao.active");
+  if (botaoAtivo) botaoAtivo.classList.remove("active");
+  document.querySelectorAll(".menuBotao")[0].classList.add("active");
+}
+
+function abrir_AreaEmpresa() {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("areaEmpresa").style.display = "block"; // 
+  document.getElementById("pessoasParticipantes").style.display = "none";
+  document.getElementById("ambienteInterno").style.display = "none";
+  
+  const botaoAtivo = document.querySelector(".menuBotao.active");
+  if (botaoAtivo) botaoAtivo.classList.remove("active");
+  document.querySelectorAll(".menuBotao")[1].classList.add("active");
+
+  // Apenas chama a função de atualizar isolada
+  atualizar_AreaEmpresa();
+}
+
+function abrir_PessoasParticipantes() {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("areaEmpresa").style.display = "none";
+  document.getElementById("pessoasParticipantes").style.display = "block"; 
+  document.getElementById("ambienteInterno").style.display = "none";
+  
+  const botaoAtivo = document.querySelector(".menuBotao.active");
+  if (botaoAtivo) botaoAtivo.classList.remove("active");
+  document.querySelectorAll(".menuBotao")[2].classList.add("active");
+
+  // Apenas chama a função de atualizar isolada
+  atualizar_PessoasParticipantes();
+}
+
+function abrir_AmbienteInterno() {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("areaEmpresa").style.display = "none";
+  document.getElementById("pessoasParticipantes").style.display = "none"; 
+  document.getElementById("ambienteInterno").style.display = "block"; 
+  
+  const botaoAtivo = document.querySelector(".menuBotao.active");
+  if (botaoAtivo) botaoAtivo.classList.remove("active");
+  document.querySelectorAll(".menuBotao")[3].classList.add("active");
+}
+
+// Inicializa o sistema na Home com segurança original
+document.addEventListener("DOMContentLoaded", function() {
+  abrir_Home();
+});
+
+</script>
