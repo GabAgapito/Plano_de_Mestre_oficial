@@ -1,0 +1,26 @@
+/* ÁREA DE PERFIL DO USUÁRIO */
+.perfil-usuario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px 20px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+}
+
+.foto-perfil {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+.nome-usuario {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

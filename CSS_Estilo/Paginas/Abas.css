@@ -1,4 +1,4 @@
-/* PÁGINAS ESTRUTURAIS (Forçando altura mínima visível) */
+/* PÁGINAS ESTRUTURAIS (Forçando altura mínima visível)
   #areaEmpresa {
     display: flex;
     flex-direction: column;
@@ -27,6 +27,32 @@
     align-content: center;
     height: 85%;
     width: 100%;
-  }
+  } */
+
+/* ESTILO GERAL PARA AS PÁGINAS INTERNAS DO IFRAME */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* PÁGINAS ESTRUTURAIS */
+#areaEmpresa,
+#pessoasParticipantes,
+#ambienteInterno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Mantém centralizado na horizontal */
+  justify-content: flex-start;
+  /* Alinha o conteúdo ao TOPO */
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px 20px 40px 20px;
+  /* 20px no topo dá a margem pequena para não colar na borda */
+  box-sizing: border-box;
+}
 
   

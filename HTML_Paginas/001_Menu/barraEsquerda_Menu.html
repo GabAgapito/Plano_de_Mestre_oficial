@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu lateral</title>
-    <link rel="stylesheet" href="CSS_Estilo/Menu/Estilo_Menu.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Estilo do Menu -->
+    <link rel="stylesheet" href="../../CSS_Estilo/Menu/Estilo_Menu.css">
+    <!-- Perfil do Usuário -->
+    <link rel="stylesheet" href="../../CSS_Estilo/Menu/Perfil_Usuario.css">
 </head>
 
 <body>
     <div class="layout">
         <nav class="menu">
-            <a href="HTML_Paginas/001_Menu/Home.html" target="conteudo">Home</a>
-            <a href="HTML_Paginas/003_Informacoes/Area_Empresa.html" target="conteudo">Área da Empresa</a>
-            <a href="HTML_Paginas/003_Informacoes/Pessoas_Participantes.html" target="conteudo">Pessoas Participantes</a>
-            <a href="HTML_Paginas/004_Interno/Ambiente_Interno.html" target="conteudo">Ambiente Interno</a>
+
+            <!-- ÁREA DO PERFIL DO USUÁRIO -->
+            <div class="perfil-usuario">
+                <img src="https://via.placeholder.com/150" alt="Foto do Usuário" class="foto-perfil">
+                <span class="nome-usuario">Gabriel Agapito</span>
+            </div>
+
+            <!-- LINKS DO MENU -->
+            <a href="Home.html" target="conteudo">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="../002_Informacoes/Area_Empresa.html" target="conteudo">
+                <i class="fa-solid fa-building-user"></i>
+                <span>Área da Empresa</span>
+            </a>
+
+            <a href="../002_Informacoes/Pessoas_Participantes.html" target="conteudo">
+                <i class="fa-solid fa-users"></i>
+                <span>Pessoas Participantes</span>
+            </a>
+
+            <a href="../003_Interno/Ambiente_Interno.html" target="conteudo">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <span>Ambiente Interno</span>
+            </a>
         </nav>
 
         <iframe class="conteudo" name="conteudo" src="Home.html" title="Conteúdo da página"></iframe>
