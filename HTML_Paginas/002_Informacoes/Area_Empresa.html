@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="CSS_Estilo/Paginas/Abas.css">
+    <link rel="stylesheet" href="CSS_Estilo/Paginas/Estrutura_Aba.css">
+    <link rel="stylesheet" href="CSS_Estilo/Paginas/Estilo_Tabela.css">
+    <link rel="stylesheet" href="CSS_Estilo/Paginas/Estilo_Formulario.css">
+
+</head>
+<body>
+
+<!-- PÁGINA ÁREA EMPRESA -->
+<div id="areaEmpresa">
+
+    <div class="container-geral">
+
+        <div class="coluna-esquerda">
+            <h2 class="TituloPagina">Áreas da Empresa</h2>
+            <p>A tabela vai mostrar todos as Áreas da Empresa e no lado vai ter um botão para cadastrar.</p>
+            <br />
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Área</th>
+                    </tr>
+                <tbody id="corpoTabela">
+
+                </tbody>
+                </thead>
+            </table>
+
+        </div>
+
+        <div class="coluna-direita">
+            <button class="botaoAtualizar" onclick="atualizar_AreaEmpresa()">
+                <i class="fa-solid fa-arrows-rotate"></i>
+            </button>
+
+            <button class="botaoCadastro_formulario" onclick="openModal()">
+                <i class="fa-solid fa-clipboard-list"></i>
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>

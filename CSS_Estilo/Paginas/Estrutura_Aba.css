@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-<style>
-  /* ESTRUTURA INTERNA COMPARTILHADA POR TODAS AS ABAS */
+ /* ESTRUTURA INTERNA COMPARTILHADA POR TODAS AS ABAS */
   .container-geral {
     display: flex;
     flex-direction: center;
@@ -10,7 +7,7 @@
     align-content: center;
     align-items: center;
     height: 85%;
-    weight: 100%;
+    width: 100%;
   }
 
   .coluna-esquerda {
@@ -18,7 +15,7 @@
     align-content: center;
     align-items: center;
     height: 100%;
-    weight: 93%;
+    width: 93%;
   }
 
   .coluna-direita {
@@ -26,7 +23,7 @@
     align-content: center;
     align-items: center;
     height: 100%;
-    weight: 7%;
+    width: 7%;
   }
 
   .TituloPagina {
@@ -59,6 +56,3 @@
   font-size: 1.25rem;  /* Aumenta o ícone. Se quiser ainda maior, mude para 1.8rem ou 2rem */
   margin-right: 0;    /* Zera a margem antiga, já que não tem mais texto do lado */
 }
-  
-</style>
-</html>

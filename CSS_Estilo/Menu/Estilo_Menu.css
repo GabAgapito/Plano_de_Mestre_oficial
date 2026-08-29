@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.menu {
+    width: 18%;
+    min-width: 180px;
+    height: 100vh;
+    background-color: #4D3DFE;
+}
+
+.menu a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 20px;
+}
+
+.menu a:hover,
+.menu a.ativo {
+    background-color: #D9D2FE;
+    color: black;
+}
+
+.conteudo {
+    width: 82%;
+    height: 100vh;
+    border: none;
+    background-color: #ffffff;
+}
+
+.pagina {
+    padding: 40px;
+}
+
+.pagina h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #4D3DFE;
+}
+
+.pagina p {
+    font-size: 16px;
+}

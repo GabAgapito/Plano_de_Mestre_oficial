@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <style>
-  
-  /* PÁGINA HOME */
+/* PÁGINA HOME */
 
   /* Primeira Parte Grande da Página Home */
   #Parte1{
@@ -53,9 +49,5 @@
     align-content: center;
     align-items: center;
     height: 85%;
-    weight: 100%;
+    width: 100%;
   }
-
-
-  </style>
-</html>
