@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Áreas da Empresa</title>
 
     <link rel="stylesheet" href="../../CSS_Estilo/main_importar_estilo.css">
-
 </head>
+
 <body>
 
-<!-- PÁGINA ÁREA EMPRESA -->
-<div id="areaEmpresa">
+    <!-- PÁGINA ÁREA EMPRESA -->
+    <div id="areaEmpresa">
 
-    <div class="container-geral">
+        <!-- CABEÇALHO DA PÁGINA (FORA DO FLEXBOX) -->
+        <h2 class="TituloPagina">Áreas da Empresa</h2>
+        <p class="DescricaoPagina">A tabela vai mostrar todas as Áreas da Empresa e ao lado haverá os botões de ação.
+        </p>
 
-        <div class="coluna-esquerda">
-            <h2 class="TituloPagina">Áreas da Empresa</h2>
-            <p>A tabela vai mostrar todos as Áreas da Empresa e no lado vai ter um botão para cadastrar.</p>
-            <br />
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome do Área</th>
-                    </tr>
-                <tbody id="corpoTabela">
+        <!-- CONTAINER APENAS DA TABELA + BOTÕES -->
+        <div class="container-geral">
 
-                </tbody>
-                </thead>
-            </table>
+            <!-- LADO ESQUERDO: APENAS A TABELA -->
+            <div class="coluna-esquerda">
+                <table class="tabela-padrao">
+                    <thead class="tabela-cabecalho">
+                        <tr class="tabela-linha">
+                            <th class="tabela-coluna">Nome da Área</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tabela-corpo">
+                        <tr class="tabela-linha">
+                            <td class="tabela-celula">Financeiro</td>
+                        </tr>
+                        <tr class="tabela-linha">
+                            <td class="tabela-celula">Gestão de Pessoas</td>
+                        </tr>
+                        <tr class="tabela-linha">
+                            <td class="tabela-celula">Marketing</td>
+                        </tr>
+                        <tr class="tabela-linha">
+                            <td class="tabela-celula">Vendas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        </div>
+            <!-- LADO DIREITO: BOTÕES DE AÇÃO -->
+            <div class="coluna-direita">
+                <button class="botaoAtualizar" onclick="atualizar_AreaEmpresa()">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </button>
 
-        <div class="coluna-direita">
-            <button class="botaoAtualizar" onclick="atualizar_AreaEmpresa()">
-                <i class="fa-solid fa-arrows-rotate"></i>
-            </button>
+                <button class="botaoCadastro_formulario" onclick="openModal()">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                </button>
+            </div>
 
-            <button class="botaoCadastro_formulario" onclick="openModal()">
-                <i class="fa-solid fa-clipboard-list"></i>
-            </button>
         </div>
 
     </div>
 
 </body>
+
 </html>

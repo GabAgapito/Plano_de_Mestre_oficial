@@ -12,22 +12,27 @@
 
     <!-- PÁGINA Pessoas Participantes -->
     <div id="pessoasParticipantes">
+
+        <!-- CABEÇALHO DA PÁGINA (FORA DO FLEXBOX) -->
+        <h2 class="TituloPagina">Pessoas Participantes</h2>
+        <p>A tabela vai mostrar todas as pessoas para cadastrarem no Planejamento Estratégico da Empresa</p>
     
         <div class="container-geral">
-    
             <div class="coluna-esquerda">
-                <h2 class="TituloPagina">Pessoas Participantes</h2>
-                <p>A tabela vai mostrar todas as pessoas para cadastrarem no Planejamento Estratégico da Empresa</p>
-                <br />
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nome da Pessoa</th>
-                            <th>Email</th>
-                            <th>Área da Empresa</th>
+                <table class="tabela-padrao">
+                    <thead class="tabela-cabecalho">
+                        <tr class="tabela-linha">
+                            <th class="tabela-coluna">Nome da Pessoa</th>
+                            <th class="tabela-coluna">Email</th>
+                            <th class="tabela-coluna">Área da Empresa</th>
                         </tr>
                     </thead>
-                    <tbody id="corpoTabela2">
+                    <tbody class="tabela-corpo">
+                        <tr class="tabela-linha">
+                            <td class="tabela-celula">João Silva</td>
+                            <td class="tabela-celula">joao.silva@empresa.com</td>
+                            <td class="tabela-celula">Financeiro</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

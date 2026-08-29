@@ -1,29 +1,31 @@
- /* ESTRUTURA INTERNA COMPARTILHADA POR TODAS AS ABAS */
-  .container-geral {
-    display: flex;
-    flex-direction: center;
-    justify-content: space-around;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    height: 85%;
-    width: 100%;
-  }
+/* Container flexível alinhando Tabela e Botões */
+.container-geral {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  /* Alinha o topo da tabela com o topo do primeiro botão */
+  gap: 15px;
+  /* Distância exata entre a tabela e os botões */
+  width: 100%;
+  max-width: 700px;
+  /* Controla a largura para não esticar demais na tela */
+  margin: 20px auto;
+  /* Centraliza o bloco na página */
+}
 
-  .coluna-esquerda {
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    height: 100%;
-    width: 93%;
-  }
+.coluna-esquerda {
+  flex: 1;
+  /* Ocupa a maior parte do container */
+  width: 100%;
+}
 
-  .coluna-direita {
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    height: 100%;
-    width: 7%;
-  }
-
-  
+.coluna-direita {
+  display: flex;
+  flex-direction: column;
+  /* Empilha os botões verticalmente */
+  gap: 10px;
+  /* Espaçamento entre os botões */
+  flex-shrink: 0;
+  /* Impede que os botões sejam espremidos ou cortados */
+}

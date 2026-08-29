@@ -1,7 +1,13 @@
 .TituloPagina {
+    text-align: center;
+    margin-bottom: 10px;
     font-size: 28px;
     color: #025cf8;
     font-weight: 900;
-    margin-bottom: 15px;
   }
 
+    /* Título e Descrição Centralizados */
+    .DescricaoPagina {
+      text-align: center;
+      margin-bottom: 10px;
+    }

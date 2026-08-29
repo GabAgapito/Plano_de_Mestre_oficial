@@ -1,7 +1,11 @@
-/* ESTRUTURA E BORDAS DA TABELA */
-table {
+.tabela-padrao {
   border-collapse: collapse;
   width: 100%;
+  /* Ocupa a largura disponível... */
+    max-width: 600px;
+  /* A tabela preenche a coluna esquerda */
+  margin: 0;
+  /* Remove margens para não desalinharem os botões */
 }
 
 th,
