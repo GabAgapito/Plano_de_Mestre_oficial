@@ -4,45 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu lateral</title>
-
+    <title>Menu Lateral Flyout</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Estilo do Menu -->
-    <link rel="stylesheet" href="../../CSS_Estilo/Menu/Estilo_Menu.css">
-    <!-- Perfil do Usuário -->
-    <link rel="stylesheet" href="../../CSS_Estilo/Menu/Perfil_Usuario.css">
+
+    <!-- CSS do Perfil do Usuário -->
+    <link rel="stylesheet" href="../../CSS_Estilo/Menu/001_Perfil_Usuario.css">
+
+    <!-- CSS do Menu -->
+    <link rel="stylesheet" href="../../CSS_Estilo/Menu/002_Estilo_Menu.css">
+
+    <!-- CSS do SubMenu -->
+    <link rel="stylesheet" href="../../CSS_Estilo/Menu/003_Estilo-SubMenu.css">
+
 </head>
 
 <body>
     <div class="layout">
         <nav class="menu">
 
-            <!-- ÁREA DO PERFIL DO USUÁRIO -->
             <div class="perfil-usuario">
                 <img src="https://via.placeholder.com/150" alt="Foto do Usuário" class="foto-perfil">
-                <span class="nome-usuario">Gabriel Agapito</span>
+                <span class="nome-usuario">Gabriel</span>
             </div>
 
-            <!-- LINKS DO MENU -->
-            <a href="Home.html" target="conteudo">
+            <!-- ITEM SIMPLES -->
+            <a href="Home.html" target="conteudo" class="item-menu">
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
             </a>
 
-            <a href="../002_Informacoes/Area_Empresa.html" target="conteudo">
-                <i class="fa-solid fa-building-user"></i>
-                <span>Área da Empresa</span>
-            </a>
+            <!-- ITEM COM PAINEL FLUTUANTE 1 -->
+            <div class="item-com-sub">
+                <div class="item-menu">
+                    <i class="fa-solid fa-building-user"></i>
+                    <span>Cadastro</span>
+                    <i class="fa-solid fa-chevron-right seta"></i>
+                </div>
 
-            <a href="../002_Informacoes/Pessoas_Participantes.html" target="conteudo">
-                <i class="fa-solid fa-users"></i>
-                <span>Pessoas Participantes</span>
-            </a>
+                <!-- PAINEL FLUTUANTE -->
+                <div class="submenu-flutuante">
+                    <div class="titulo-painel">Cadastro</div>
+                    <a href="../002_Informacoes/Area_Empresa.html" target="conteudo">Área da Empresa</a>
+                    <a href="../002_Informacoes/Pessoas_Participantes.html" target="conteudo">Pessoas Participantes</a>
+                </div>
+            </div>
 
-            <a href="../003_Interno/Ambiente_Interno.html" target="conteudo">
+            <!-- ITEM COM PAINEL FLUTUANTE 2 -->
+            <div class="item-com-sub">
+                <div class="item-menu">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Ambiente Interno</span>
+                    <i class="fa-solid fa-chevron-right seta"></i>
+                </div>
+
+                <!-- PAINEL FLUTUANTE -->
+                <div class="submenu-flutuante">
+                    <div class="titulo-painel">Ambiente Interno</div>
+                    <a href="../003_Interno/Ambiente_Interno.html" target="conteudo">Ambiente Interno</a>
+                    <a href="../003_Interno/Ambiente_Interno.html" target="conteudo">Dashboard do Ambiente Interno</a>
+                </div>
+            </div>
+
+            <!-- ITEM SIMPLES -->
+            <a href="../003_Interno/Ambiente_Interno.html" target="conteudo" class="item-menu">
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
-                <span>Ambiente Interno</span>
+                <span>Teste</span>
             </a>
         </nav>
 

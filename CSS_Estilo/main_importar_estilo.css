@@ -1,0 +1,15 @@
+/* Centraliza os componentes padrão do sistema */
+
+/* Estilos das Abas */
+@import url('Paginas/001_Formato_Abas.css');
+@import url('Paginas/002_Estrutura_Abas.css');
+@import url('Paginas/003_Detalhes_Abas.css');
+@import url('Paginas/004_Botoes_Abas.css');
+
+/* Estilos das Tabelas */
+@import url('Tabela/001_Formato_Tabela.css');
+@import url('Tabela/002_Estrutura_Tabela.css');
+@import url('Tabela/003_Corpo_Tabela.css');
+
+/* Estilos dos Formulários */
+@import url('Paginas/Estilo_Formulario.css');

@@ -1,0 +1,9 @@
+/* CABEÇALHO DA TABELA */
+thead {
+  font-size: 14px;
+}
+
+th {
+  background-color: #84abdf;
+  color: #ffffff;
+}

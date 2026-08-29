@@ -1,4 +1,3 @@
-/* ÁREA DE PERFIL DO USUÁRIO */
 .perfil-usuario {
     display: flex;
     align-items: center;
@@ -18,8 +17,8 @@
 
 .nome-usuario {
     color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 900;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

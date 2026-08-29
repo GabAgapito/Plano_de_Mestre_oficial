@@ -1,0 +1,53 @@
+.submenu-flutuante {
+    display: none;
+    /* Oculto por padrão */
+    position: absolute;
+    top: 0;
+    left: 100%;
+    /* Faz o painel abrir exatamente ao lado do menu */
+    width: 220px;
+    background-color: #025CF8;
+    /* Tom ligeiramente mais escuro para destaque */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 0 8px 8px 0;
+    padding: 10px 0;
+    z-index: 99;
+}
+
+/* LINKS DENTRO DO PAINEL FLUTUANTE */
+.submenu-flutuante a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.submenu-flutuante a:hover {
+    background-color: #b1c6f3;
+    color: #000000;
+}
+
+/* ESTRUTURA DO PAINEL FLUTUANTE (FLYOUT) */
+.item-com-sub {
+    position: relative;
+    /* Define a referência para o submenu flutuante */
+}
+
+
+/* EXIBE O PAINEL FLUTUANTE AO PASSAR O MOUSE */
+.item-com-sub:hover .submenu-flutuante {
+    display: block;
+}
+
+/* TITULO DENTRO DO PAINEL */
+.titulo-painel {
+    color: #D9D2FE;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 20px 12px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 5px;
+}
