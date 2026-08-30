@@ -1,24 +1,57 @@
+/* CONTAINER DO PERFIL */
 .perfil-usuario {
     display: flex;
     align-items: center;
+    /* Alinha a foto verticalmente com os textos */
     gap: 12px;
-    padding: 15px 20px 20px 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    margin-bottom: 10px;
+    /* Distância entre a foto e o bloco de nome/cargo */
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
+/* FOTO DO PERFIL ARREDONDADA */
 .foto-perfil {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
+    /* Deixa a foto perfeitamente redonda */
     object-fit: cover;
-    border: 2px solid #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    /* Borda fina para destacar o avatar */
+    flex-shrink: 0;
+    /* Impede que a foto amasse em telas menores */
 }
 
+/* CONTAINER DOS TEXTOS */
+.info-usuario {
+    display: flex;
+    flex-direction: column;
+    /* Empilha o nome em cima e o cargo embaixo */
+    justify-content: center;
+    overflow: hidden;
+    /* Permite o efeito ... em nomes ou cargos muito longos */
+}
+
+/* NOME DO USUÁRIO COM DESTAQUE */
 .nome-usuario {
     color: #ffffff;
-    font-size: 16px;
-    font-weight: 900;
+    font-size: 15px;
+    font-weight: 700;
+    /* Negrito bem destacado */
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* CARGO DO USUÁRIO */
+.cargo-usuario {
+    color: rgba(255, 255, 255, 0.75);
+    /* Cor suavizada para criar hierarquia visual */
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 2px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

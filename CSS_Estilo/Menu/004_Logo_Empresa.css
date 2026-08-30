@@ -1,0 +1,23 @@
+/* CONTAINER DA LOGO NO RODAPÉ */
+.logo-empresa-container {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    /* Remove o espaço em cima para descer o bloco */
+    padding-bottom: 1px;
+    /* Define a folga mínima exata na parte inferior */
+    box-sizing: border-box;
+}
+
+/* IMAGEM DA LOGO */
+.logo-empresa {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 0;
+    /* Garante que não haja espaço extra vindo do elemento */
+}

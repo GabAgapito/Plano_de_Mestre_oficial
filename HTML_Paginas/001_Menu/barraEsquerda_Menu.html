@@ -5,17 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Lateral Flyout</title>
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- CSS do Perfil do Usuário -->
-    <link rel="stylesheet" href="../../CSS_Estilo/Menu/001_Perfil_Usuario.css">
-
     <!-- CSS do Menu -->
-    <link rel="stylesheet" href="../../CSS_Estilo/Menu/002_Estilo_Menu.css">
-
-    <!-- CSS do SubMenu -->
-    <link rel="stylesheet" href="../../CSS_Estilo/Menu/003_Estilo-SubMenu.css">
+    <link rel="stylesheet" href="../../CSS_Estilo/importar_estilo_menu.css"> 
 
 </head>
 
@@ -24,14 +19,20 @@
         <nav class="menu">
 
             <div class="perfil-usuario">
-                <img src="https://via.placeholder.com/150" alt="Foto do Usuário" class="foto-perfil">
-                <span class="nome-usuario">Gabriel</span>
+                <img src="https://picsum.photos/150" alt="Foto do Usuário" class="foto-perfil">
+                
+                <!-- DIV PARA JUNTAR E EMPILHAR O NOME E O CARGO -->
+                <div class="info-usuario">
+                    <span class="nome-usuario">Gabriel Agapito</span>
+                    <span class="cargo-usuario">CEO</span>
+                </div>
+                
             </div>
 
             <!-- ITEM SIMPLES -->
-            <a href="Home.html" target="conteudo" class="item-menu">
+            <a href="Boas_Vindas.html" target="conteudo" class="item-menu">
                 <i class="fa-solid fa-house"></i>
-                <span>Home</span>
+                <span>Bem Vindo</span>
             </a>
 
             <!-- ITEM COM PAINEL FLUTUANTE 1 -->
@@ -71,9 +72,15 @@
                 <i class="fa-solid fa-magnifying-glass-chart"></i>
                 <span>Teste</span>
             </a>
+
+            <!-- LOGO DA EMPRESA FIXADA NO RODAPÉ -->
+            <div class="logo-empresa-container">
+                <img src="../../Imagem/Logo/logo_empresa.png" alt="Logo da Empresa" class="logo-empresa">
+            </div>
+
         </nav>
 
-        <iframe class="conteudo" name="conteudo" src="Home.html" title="Conteúdo da página"></iframe>
+        <iframe class="conteudo" name="conteudo" src="Boas_Vindas.html" title="Conteúdo da página"></iframe>
     </div>
 </body>
 
