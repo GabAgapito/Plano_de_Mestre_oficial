@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pessoas Participantes</title>
 
-    <link rel="stylesheet" href="../../CSS_Estilo/importar_estilo_aba.css">
-
+    <link rel="stylesheet" href="../../../CSS_Estilo/importar_estilo_aba.css">
+    <!-- Font Awesome para renderizar os ícones dos botões -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- PÁGINA Pessoas Participantes -->
+    <!-- PÁGINA PESSOAS PARTICIPANTES -->
     <div id="pessoasParticipantes">
 
-        <!-- CABEÇALHO DA PÁGINA (FORA DO FLEXBOX) -->
+        <!-- CABEÇALHO DA PÁGINA -->
         <h2 class="TituloPagina">Pessoas Participantes</h2>
-        <p>A tabela vai mostrar todas as pessoas para cadastrarem no Planejamento Estratégico da Empresa</p>
-    
+        <p class="DescricaoPagina">A tabela vai mostrar todas as pessoas para cadastrarem no Planejamento Estratégico da
+            Empresa.</p>
+
+        <!-- CONTAINER DA TABELA + BOTÕES DE AÇÃO -->
         <div class="container-geral">
+
+            <!-- LADO ESQUERDO: TABELA -->
             <div class="coluna-esquerda">
                 <table class="tabela-padrao">
                     <thead class="tabela-cabecalho">
@@ -27,7 +34,7 @@
                             <th class="tabela-coluna">Área da Empresa</th>
                         </tr>
                     </thead>
-                    <tbody class="tabela-corpo">
+                    <tbody class="tabela-corpo" id="corpoTabelaPessoas">
                         <tr class="tabela-linha">
                             <td class="tabela-celula">João Silva</td>
                             <td class="tabela-celula">joao.silva@empresa.com</td>
@@ -36,23 +43,22 @@
                     </tbody>
                 </table>
             </div>
-    
+
+            <!-- LADO DIREITO: BOTÕES DE AÇÃO -->
             <div class="coluna-direita">
-                <button class="botaoAtualizar" onclick="atualizar_PessoasParticipantes()" title="Atualizar Dados">
+                <button class="botaoAtualizar" onclick="atualizar_PessoasParticipantes()" title="Atualizar Tabela">
                     <i class="fa-solid fa-arrows-rotate"></i>
                 </button>
-                <button class="botaoCadastro_formulario">
+
+                <button class="botaoCadastro_formulario" onclick="openModal()" title="Abrir Formulário">
                     <i class="fa-solid fa-clipboard-list"></i>
                 </button>
             </div>
-    
+
         </div>
+
     </div>
 
-
-
-
-
-    
 </body>
+
 </html>

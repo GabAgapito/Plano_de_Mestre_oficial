@@ -1,0 +1,18 @@
+<!-- MODAL POPUP: ÁREAS DA EMPRESA -->
+<div id="modalAreaEmpresa" class="modal" style="display: none;">
+    <div class="content">
+        <!-- BOTÃO DE FECHAR (Posicionado dentro do card) -->
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2 class="titulo_formulario">Cadastro de Áreas</h2>
+
+        <form id="formAreaEmpresa" onsubmit="event.preventDefault(); cadastrarFormulario();">
+            <div class="campo-form">
+                <label class="label_form" for="nomeArea">Nome da Área</label>
+                <input class="input_form" type="text" id="nomeArea" name="nome" required placeholder="Digite o nome...">
+            </div>
+
+            <button class="btn-submit-form" type="submit">Cadastrar</button>
+        </form>
+    </div>
+</div>

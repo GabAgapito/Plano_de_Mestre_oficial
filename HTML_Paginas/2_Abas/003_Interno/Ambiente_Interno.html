@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambiente Interno</title>
+
+    <link rel="stylesheet" href="../../../CSS_Estilo/importar_estilo_aba.css">
+    <!-- Font Awesome para renderizar os ícones dos botões -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- PÁGINA AMBIENTE INTERNO -->
+    <div id="ambienteInterno">
+
+        <!-- CABEÇALHO DA PÁGINA -->
+        <h2 class="TituloPagina">Ambiente Interno</h2>
+        <p class="DescricaoPagina">A tabela vai mostrar os itens de avaliação do Ambiente Interno da empresa.</p>
+
+        <!-- CONTAINER DA TABELA + BOTÕES DE AÇÃO -->
+        <div class="container-geral">
+
+            <!-- LADO ESQUERDO: TABELA -->
+            <div class="coluna-esquerda">
+                <table class="tabela-padrao">
+                    <thead class="tabela-cabecalho">
+                        <tr class="tabela-linha">
+                            <th class="tabela-coluna">Itens</th>
+                            <th class="tabela-coluna">Nota</th>
+                            <th class="tabela-coluna">Área da Empresa</th>
+                            <th class="tabela-coluna">Classificação</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tabela-corpo" id="corpoTabela2">
+                        <!-- Os dados serão carregados dinamicamente via JS/API -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- LADO DIREITO: BOTÕES DE AÇÃO -->
+            <div class="coluna-direita">
+                <button class="botaoAtualizar" onclick="atualizar_AmbienteInterno()" title="Atualizar Tabela">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </button>
+
+                <button class="botaoCadastro_formulario" onclick="openModal()" title="Abrir Formulário">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

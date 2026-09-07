@@ -1,0 +1,29 @@
+/* INPUTS E LABELS DO FORMULÁRIO */
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.label_form {
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.input_form {
+    background-color: #ffffff;
+    border: 1.5px solid #dcdde1;
+    border-radius: 6px;
+    width: 80%;
+    padding: 10px 12px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input_form:focus {
+    border-color: #5449DE;
+}

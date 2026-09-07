@@ -1,23 +1,64 @@
-    /* Configurações do Botão */
-.botaoAtualizar {
-  background-color: #2ECC71; /* Exemplo de cor verde */
-  color: white;
+/* ===================================================
+   CONFIGURAÇÕES DOS BOTÕES DE AÇÃO (.coluna-direita)
+   =================================================== */
+
+/* Estilo base aplicado aos dois botões */
+.botaoAtualizar,
+.botaoCadastro_formulario {
+  width: 42px;
+  /* Largura fixa garante o formato quadrado */
+  height: 42px;
+  /* Altura fixa impede que o botão seja esmagado */
   border: none;
-  padding: 12px;             /* Espaçamento interno para deixar o botão quadrado */
-  border-radius: 8px;        /* Bordas levemente arredondadas */
+  border-radius: 8px;
+  /* Bordas levemente arredondadas */
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  /* Centraliza o ícone verticalmente */
   justify-content: center;
-  transition: background-color 0.2s;
+  /* Centraliza o ícone horizontalmente */
+  flex-shrink: 0;
+  /* Impede que o Flexbox altere o tamanho do botão */
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+/* Efeito ao passar o mouse em qualquer botão de ação */
+.botaoAtualizar:hover,
+.botaoCadastro_formulario:hover {
+  transform: scale(1.05);
+  /* Leve destaque visual */
+}
+
+/* Tamanho uniforme dos ícones internos */
+.botaoAtualizar i,
+.botaoCadastro_formulario i {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #ffffff;
+  /* Garante ícone branco nos dois botões */
+}
+
+/* ---------------------------------------------------
+   CORES ESPECÍFICAS DE CADA BOTÃO
+   --------------------------------------------------- */
+
+/* Botão 1: Atualizar (Verde) */
+.botaoAtualizar {
+  background-color: #2ECC71;
 }
 
 .botaoAtualizar:hover {
-  background-color: #0b7dda; /* Efeito de cor mais escura ao passar o mouse */
+  background-color: #27AE60;
+  /* Tom de verde mais escuro no hover */
 }
 
-/* AQUI aumenta o tamanho do Ícone */
-.botaoAtualizar i {
-  font-size: 1.25rem;  /* Aumenta o ícone. Se quiser ainda maior, mude para 1.8rem ou 2rem */
-  margin-right: 0;    /* Zera a margem antiga, já que não tem mais texto do lado */
+/* Botão 2: Cadastro / Formulário (Roxo) */
+.botaoCadastro_formulario {
+  background-color: #A29BFE;
+}
+
+.botaoCadastro_formulario:hover {
+  background-color: #6C5CE7;
+  /* Tom de roxo mais escuro no hover */
 }

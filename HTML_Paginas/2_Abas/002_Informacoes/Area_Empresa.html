@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Áreas da Empresa</title>
 
-    <link rel="stylesheet" href="../../CSS_Estilo/importar_estilo_aba.css">
+    <link rel="stylesheet" href="../../../CSS_Estilo/importar_estilo_aba.css">
+    <!-- Font Awesome para carregar os ícones dos botões -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -14,15 +16,15 @@
     <!-- PÁGINA ÁREA EMPRESA -->
     <div id="areaEmpresa">
 
-        <!-- CABEÇALHO DA PÁGINA (FORA DO FLEXBOX) -->
+        <!-- CABEÇALHO DA PÁGINA -->
         <h2 class="TituloPagina">Áreas da Empresa</h2>
         <p class="DescricaoPagina">A tabela vai mostrar todas as Áreas da Empresa e ao lado haverá os botões de ação.
         </p>
 
-        <!-- CONTAINER APENAS DA TABELA + BOTÕES -->
+        <!-- CONTAINER DA TABELA + BOTÕES DE AÇÃO -->
         <div class="container-geral">
 
-            <!-- LADO ESQUERDO: APENAS A TABELA -->
+            <!-- LADO ESQUERDO: TABELA -->
             <div class="coluna-esquerda">
                 <table class="tabela-padrao">
                     <thead class="tabela-cabecalho">
@@ -30,7 +32,7 @@
                             <th class="tabela-coluna">Nome da Área</th>
                         </tr>
                     </thead>
-                    <tbody class="tabela-corpo">
+                    <tbody class="tabela-corpo" id="corpoTabela">
                         <tr class="tabela-linha">
                             <td class="tabela-celula">Financeiro</td>
                         </tr>
@@ -49,11 +51,11 @@
 
             <!-- LADO DIREITO: BOTÕES DE AÇÃO -->
             <div class="coluna-direita">
-                <button class="botaoAtualizar" onclick="atualizar_AreaEmpresa()">
+                <button class="botao-acao botaoAtualizar" onclick="atualizar_AreaEmpresa()" title="Atualizar Tabela">
                     <i class="fa-solid fa-arrows-rotate"></i>
                 </button>
 
-                <button class="botaoCadastro_formulario" onclick="openModal()">
+                <button class="botao-acao botaoCadastro_formulario" onclick="openModal()" title="Abrir Formulário">
                     <i class="fa-solid fa-clipboard-list"></i>
                 </button>
             </div>
@@ -61,6 +63,12 @@
         </div>
 
     </div>
+
+    <!-- CONTAINER ONDE O MODAL SERÁ CARREGADO DINAMICAMENTE -->
+    <div id="container-modal"></div>
+    
+    <!-- Se o script estiver dentro da pasta Area_Empresa -->
+    <script src="../Javascript/01_Formularios/Area_Empresa/controle_modal.js"></script>
 
 </body>
 

@@ -1,0 +1,46 @@
+/* ESTRUTURA BASE E CONTAINER DO MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.content {
+  position: relative;
+  background-color: #F7FCFF;
+  padding: 30px 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  color: #888888;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close:hover {
+  color: #e74c3c;
+}
+
+.titulo_formulario {
+  color: #5449DE;
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 20px;
+}

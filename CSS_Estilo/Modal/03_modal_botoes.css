@@ -1,0 +1,18 @@
+/* BOTÃO DE SUBMIT DO FORMULÁRIO */
+.btn-submit-form {
+    background-color: #D9D2FE;
+    border: none;
+    color: #2c3e50;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s, transform 0.1s;
+}
+
+.btn-submit-form:hover {
+    background-color: #5449DE;
+    color: #ffffff;
+    transform: translateY(-1px);
+}

@@ -11,5 +11,4 @@
 @import url('Tabela/002_Cabeçalho_Tabela.css');
 @import url('Tabela/003_Corpo_Tabela.css');
 
-/* Estilos dos Formulários */
-@import url('Paginas/Estilo_Formulario.css');
+@import url("./importar_estilo_formulario.css");
