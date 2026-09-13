@@ -1,0 +1,25 @@
+/* Limita o tamanho da imagem e deixa ela arredondada */
+.foto-tabela {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    /* Deixa a foto circular */
+    object-fit: cover !important;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Garante o alinhamento da coluna de foto */
+.celula-foto {
+    width: 60px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Mantém os botões laterais alinhados ao topo da tabela caso a altura mude */
+.container-tabela-com-botoes {
+    display: flex;
+    align-items: flex-start;
+    /* Impede que os botões caiam se a linha crescer */
+    gap: 12px;
+}

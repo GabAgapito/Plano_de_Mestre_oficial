@@ -4,7 +4,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     // Tente o caminho relativo saindo da pasta '2_Abas':
-    fetch("../3_Modal/AreaEmpresa/Modal_AreaEmpresa.html")
+    fetch("../2_Modal/AreaEmpresa/Modal_AreaEmpresa.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Erro HTTP! Status: ${response.status}`);

@@ -6,9 +6,13 @@
 @import url('Paginas/003_Detalhes_Abas.css');
 @import url('Paginas/004_Botoes_Abas.css');
 
+/* Formatação Condicional das Abas */
+@import url('Paginas/Formatacao_Condicional/ambiente_interno.css');
+
 /* Estilos das Tabelas */
 @import url('Tabela/001_Estrutura_Tabela.css');
 @import url('Tabela/002_Cabeçalho_Tabela.css');
 @import url('Tabela/003_Corpo_Tabela.css');
+@import url('Tabela/004_Foto_na_tabela.css');
 
 @import url("./importar_estilo_formulario.css");

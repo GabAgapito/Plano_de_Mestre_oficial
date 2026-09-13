@@ -6,59 +6,57 @@
 .botaoAtualizar,
 .botaoCadastro_formulario {
   width: 42px;
-  /* Largura fixa garante o formato quadrado */
   height: 42px;
-  /* Altura fixa impede que o botão seja esmagado */
   border: none;
   border-radius: 8px;
-  /* Bordas levemente arredondadas */
   cursor: pointer;
   display: flex;
   align-items: center;
-  /* Centraliza o ícone verticalmente */
   justify-content: center;
-  /* Centraliza o ícone horizontalmente */
   flex-shrink: 0;
-  /* Impede que o Flexbox altere o tamanho do botão */
-  transition: background-color 0.2s, transform 0.1s;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
 }
 
-/* Efeito ao passar o mouse em qualquer botão de ação */
+/* Efeito de elevação e escala ao passar o mouse */
 .botaoAtualizar:hover,
 .botaoCadastro_formulario:hover {
-  transform: scale(1.05);
-  /* Leve destaque visual */
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
-/* Tamanho uniforme dos ícones internos */
+/* Efeito ao clicar no botão */
+.botaoAtualizar:active,
+.botaoCadastro_formulario:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: none;
+}
+
+/* Tamanho e cor dos ícones internos */
 .botaoAtualizar i,
 .botaoCadastro_formulario i {
   font-size: 1.25rem;
   margin: 0;
   color: #ffffff;
-  /* Garante ícone branco nos dois botões */
 }
 
 /* ---------------------------------------------------
    CORES ESPECÍFICAS DE CADA BOTÃO
    --------------------------------------------------- */
 
-/* Botão 1: Atualizar (Verde) */
+/* Botão 1: Atualizar (Verde Esmeralda - Ação Secundária) */
 .botaoAtualizar {
-  background-color: #2ECC71;
+  background-color: #10b981;
 }
 
 .botaoAtualizar:hover {
-  background-color: #27AE60;
-  /* Tom de verde mais escuro no hover */
+  background-color: #059669;
 }
 
-/* Botão 2: Cadastro / Formulário (Roxo) */
+/* Botão 2: Cadastro / Formulário (Azul Marca - Ação Principal) */
 .botaoCadastro_formulario {
-  background-color: #A29BFE;
+  background-color: #0066ff;
 }
 
 .botaoCadastro_formulario:hover {
-  background-color: #6C5CE7;
-  /* Tom de roxo mais escuro no hover */
+  background-color: #0052cc;
 }
